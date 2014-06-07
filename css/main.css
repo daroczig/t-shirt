@@ -1,0 +1,13 @@
+body {
+    margin: 20px;
+}
+img {
+    width: 640px;
+    max-height: 480px;
+}
+pre {
+    background-color: lightgrey;
+    padding: 5px;
+    font-family: "Courier New", Courier, monospace;
+    width: 640px;
+}
