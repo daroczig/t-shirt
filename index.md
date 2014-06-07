@@ -3,6 +3,7 @@ layout: default
 title: useR! 2014 t-shirt designs
 ---
 
+<a id="p1"></a>
 ## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
 
 - recycled lengths rather than repeated calls to rep
@@ -12,7 +13,7 @@ title: useR! 2014 t-shirt designs
 - use spaces for column names rather than dots
 - print without row names
 
-## Code
+### Code
 
 {% highlight r %}
 lens = c(19,5,
@@ -51,23 +52,23 @@ print(R, row.names=F)
 # write.table(R, file="tshirtImage.txt", quote=FALSE)
 {% endhighlight %}
 
-## Generated image
+### Generated image
 
 ![](jimhester/front.png)
 
-## T-shirt with highlighted code
+### T-shirt with highlighted code
 
 ![](jimhester/t-shirt.png)
 
 
 
-
-# [#9](https://github.com/user2014/t-shirt/pull/9) by @jimhester
+<a id="p9"></a>
+## [#9](https://github.com/user2014/t-shirt/pull/9) by @jimhester
 
 Update tshirt_code.R
 simple ggplot2 image
 
-## Code
+### Code
 
 {% highlight r %}
 library(ggplot2)
@@ -103,10 +104,10 @@ ggplot(event) +
 ggsave('tshirtImage.png', width = 8.5, height = 2)
 {% endhighlight %}
 
-## Generated image
+### Generated image
 
 ![](hanel/front.png)
 
-## T-shirt with highlighted code
+### T-shirt with highlighted code
 
 ![](hanel/t-shirt.png)
