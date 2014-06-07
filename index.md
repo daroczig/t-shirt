@@ -61,6 +61,179 @@ print(R, row.names=F)
 ![](jimhester/t-shirt.png)
 
 
+<!-- 2 -->
+
+<a id="p2"></a>
+## [#2](https://github.com/user2014/t-shirt/pull/2) by @daroczig: using pixmap
+
+As the code will be printed on the t-shirt, maybe it would look cooler with some shorter codebase by using an R package instead of a long, manually defined numeric vector. This also results in a higher resolution ASCII art, although the matrix of course can be reduced.
+
+This pull request has several alternate solutions, here goes a quick list of those and a quick demo of the last one:
+
+ * [ASCII art with saturation](https://github.com/daroczig/t-shirt/blob/2815a42cc48ae631f0440435a6a2e9161fdb5eda/tshirtImage.txt)
+ * ["user! 2014" horizontally](https://github.com/daroczig/t-shirt/blob/f21c90fa49f04105732f9930ea8848ff06ace7bd/tshirtImage.txt)
+ * [negative](https://github.com/daroczig/t-shirt/blob/533f94feff53ee844023a463cd4ac6f293d0d062/tshirtImage.txt)
+ * [final suggestion](https://github.com/daroczig/t-shirt/blob/37c6fd67c283566a343509908949a827934a83ca/tshirtImage.txt)
+
+### Code
+
+{% highlight r %}
+library(pixmap)
+
+## get R logo into a matrix
+R <- read.pnm(
+    system.file('pictures/logo.ppm',
+                package = 'pixmap')[1])
+
+## drop colors
+R <- addChannels(R)@grey
+
+## create a matrix full of "useR! 2014"
+T <- matrix(
+    strsplit('useR!2014', '')[[1]],
+    nrow = nrow(R),
+    ncol = ncol(R),
+    byrow = TRUE)
+
+## remove cells not in the R logo
+T[which(R > 0.85)] <- ' '
+
+## save to disk
+write.table(x = T, # never abbreviate TRUE to T :)
+            file = 'tshirtImage.txt',
+            row.names = FALSE,
+            sep = '',
+            col.names = FALSE,
+            quote = FALSE)
+{% endhighlight %}
+
+### Generated image
+
+![](daroczig/front.png)
+
+### T-shirt with highlighted code
+
+![](daroczig/t-shirt.png)
+
+
+<!-- 3 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
+
+
+<!-- 4 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
+
+
+<!-- 5 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
+
+
+<!-- 6 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
+
+
+<!-- 7 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
+
+
+<!-- 8 -->
+
+<a id="p1"></a>
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+
+### Code
+
+{% highlight r %}
+
+{% endhighlight %}
+
+### Generated image
+
+![](jimhester/front.png)
+
+### T-shirt with highlighted code
+
+![](jimhester/t-shirt.png)
 
 <a id="p9"></a>
 ## [#9](https://github.com/user2014/t-shirt/pull/9) by @jimhester
