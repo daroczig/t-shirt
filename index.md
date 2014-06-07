@@ -55,10 +55,10 @@ print(R, row.names=F)
 
 ## Generated image
 
-![](/hanel/front.png)
+![](hanel/front.png)
 
 ## T-shirt with highlighted code
 
-![](/hanel/t-shirt.png)
+![](hanel/t-shirt.png)
 
 #
