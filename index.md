@@ -3,9 +3,7 @@ layout: default
 title: useR! 2014 t-shirt designs
 ---
 
-This page lists all the pull requests submitted to [user2014/t-shirt](https://github.com/user2014/t-shirt) in chronological sequence.
-
-# [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
 
 - recycled lengths rather than repeated calls to rep
 - formatted lens specification by row

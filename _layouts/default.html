@@ -9,13 +9,69 @@
         <!-- syntax highlighting CSS -->
         <link rel="stylesheet" href="css/syntax.css">
 
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
         <!-- Custom CSS -->
         <link rel="stylesheet" href="css/main.css">
+
 
     </head>
     <body>
 
-          {{ content }}
+      <div class="container">
+
+	<div class="jumbotron">
+	  <h1>Pull requests for <a href="https://github.com/user2014/t-shirt">user2014/t-shirt</a>:</h1>
+	  <div id="carousel-top" class="carousel slide" data-ride="carousel">
+
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#carousel-top" data-slide-to="0" class="active"></li>
+	      <li data-target="#carousel-top" data-slide-to="1"></li>
+	      <li data-target="#carousel-top" data-slide-to="2"></li>
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner">
+	      <div class="item active">
+		<img src="jimhester/t-shirt.png" alt="...">
+		<div class="carousel-caption">
+		  #1 by jimhester
+		</div>
+	      </div>
+	      <div class="item">
+		<img src="hanel/t-shirt.png" alt="...">
+		<div class="carousel-caption">
+		  #9 by @hanel
+		</div>
+	      </div>
+
+	    </div>
+
+	    <!-- Controls -->
+	    <a class="left carousel-control" href="#carousel-top" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left"></span>
+	    </a>
+	    <a class="right carousel-control" href="#carousel-top" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right"></span>
+	    </a>
+	  </div>
+
+	</div>
+
+        {{ content }}
+
+      </div>
 
     </body>
 </html>
