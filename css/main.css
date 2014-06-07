@@ -23,19 +23,17 @@ pre {
     margin-right: auto;
 }
 .carousel-caption {
-    color: black;
+    color: white;
     font-size: 26px;
-    top: -15px;
+    bottom: 0px;
+    padding-top: 10px;
+    background-color: rgba(42,42,42,0.7);
+    height: 80px;
+    width: 100%;
+    left: 0px;
+    right: 0px;
+    z-index: 0;
 }
 .carousel-indicators {
-    top: 45px;
-}
-.carousel-indicators li {
-    border: 1px solid #000;
-}
-.carousel-indicators .active {
-    background-color: #000;
-}
-.carousel-control {
-    color: #000;
+    bottom: 0px;
 }
