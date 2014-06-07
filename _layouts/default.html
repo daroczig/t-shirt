@@ -28,7 +28,6 @@
     </head>
     <body>
 
-      <a id="top"></a>
       <div class="container">
 
 	<div class="jumbotron">
@@ -138,5 +137,15 @@
 
       </div>
 
+      <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5188d4386503fbbe"></script>
+
+      <script type="text/javascript">
+	$('body a[id]').each(function() {
+          var d = document.location.protocol +"//"+ document.location.hostname + document.location.pathname + '#' + $(this).attr('id');
+	console.log(d);
+	  $(this).before('<div class="addthis_toolbox addthis_default_style addthis_32x32_style"><a class="addthis_button_facebook" addthis:url="'+d+'"></a><a class="addthis_button_twitter" addthis:url="'+d+'"></a><a class="addthis_button_pinterest_share" addthis:url="'+d+'"></a><a class="addthis_button_google_plusone_share" addthis:url="'+d+'"></a><a class="addthis_button_compact" addthis:url="'+d+'"></a><a class="addthis_counter addthis_bubble_style"></a></div>')
+	})
+	addthis.toolbox('.addthis_toolbox');
+      </script>
     </body>
 </html>

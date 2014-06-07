@@ -34,3 +34,7 @@ img {
 .carousel-indicators {
     bottom: 0px;
 }
+.addthis_toolbox {
+    float: right;
+    margin-top: 10px;
+}
