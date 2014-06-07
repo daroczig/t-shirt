@@ -6,7 +6,6 @@ title: useR! 2014 t-shirt designs
 <a id="p1"></a>
 ## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
 
-
 - recycled lengths rather than repeated calls to rep
 - formatted lens specification by row
 - use strsplit of character string rather than explicit declaration of split characters

@@ -27,7 +27,7 @@ img {
     right: 0px;
     z-index: 0;
 }
-.carousel-caption a, a:hover, a:focus {
+.carousel-caption a, .carousel-caption a:hover, .carousel-caption a:focus {
     color: white;
     text-decoration: none;
 }
@@ -37,4 +37,11 @@ img {
 .addthis_toolbox {
     float: right;
     margin-top: 10px;
+}
+#footer {
+    border-top: 1px solid #ddd;
+    text-align: center;
+    color: #666;
+    padding: 10px;
+    font-weight: bold;
 }
