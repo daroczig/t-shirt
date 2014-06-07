@@ -178,22 +178,28 @@ points(x3, y3, pch = 20, cex = 3)
 
 <!-- 4 -->
 
-<a id="p1"></a>
-## [#1](https://github.com/user2014/t-shirt/pull/1) by @jimhester
+<a id="p4"></a>
+## [#4](https://github.com/user2014/t-shirt/pull/4) by @fhoces: CLT with R
 
 ### Code
 
 {% highlight r %}
+dev.off()
+set.seed(20140630)
 
+clt = function(n,k) apply(matrix(rbeta(n*k,.05,.05),n, k), 1, sum)/k
+plot(density(clt(1000,1)), lwd=.3, ylim=c(0,6.5), main="UseR! L.A. 2014 \n 
+Where Combining Independent and Wild Ideas is Normal", xlab="") 
+sapply(1:50, function(x) lines(density(clt(1000,x)), lwd=.3, xlab=""))
 {% endhighlight %}
 
 ### Generated image
 
-![](jimhester/front.png)
+![](fhoces/front.png)
 
 ### T-shirt with highlighted code
 
-![](jimhester/t-shirt.png)
+![](fhoces/t-shirt.png)
 
 
 <!-- 5 -->
